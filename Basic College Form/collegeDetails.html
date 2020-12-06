@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumyadeep Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        #aami{
+            background-image: url('https://www.codechef.com/sites/default/files/uploads/pictures/5e448f31d182a43aacf8063b4beb0721.jpg');
+            height: 200px;
+        }
+        .main{
+            margin: auto;
+            width: 900px;
+            text-align: center;
+            background-color: khaki;
+            border: 2px solid green;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        #bodyleft{
+            float: left;
+            width: 48%;
+            margin: 10px 5px 10px 5px;
+            /* border: 1px solid purple; */
+            background-color:lavender;
+            border-radius: 40px;
+        }
+        #bodyright{
+            float: right;
+            width: 48%;
+            margin: 10px 5px 10px 5px;
+            /* border: 1px solid blue; */
+            background-color: lavender;
+            border-radius: 40px;
+        }
+        #detailTab{
+            border: 1px solid yellow;
+            color: red;
+            margin:unset;
+            width: 900px;
+            text-align: justify;
+            clear:both
+        }
+        #footer{
+            margin: 20px 15px 20px 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="backendfile.type">
+    <div class="main">
+        <div id="aami" style="color: yellow; text-decoration: underline;">
+            By Soumyadeep Guin
+        </div>
+        <div id="head">
+            <h3 style="font-size: large;">Fill this form...</h3>
+        </div>
+        <div id="bodyleft">
+            Name:&nbsp; <input type="text">
+        </div>
+        <div id="bodyright">
+            Email: &nbsp; <input type="email" name="" id="">
+        </div>
+        <div id="bodyleft">
+            Stream:&nbsp; <label for="stream"></label>
+            <select name="streaminput" id="stream">
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="ME">ME</option>
+                <option value="EEE">EEE</option>
+                <option value="civil">Civil</option>
+                <option value="Biotech">Biotech</option>
+                <option value="Hotel Management">Hotel Management</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div id="bodyright">
+            Sec: &nbsp; <label for="sec"></label>
+            <select name="secinput" id="sec">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="Single Section">Single Section</option>
+            </select>
+        </div>
+        <div id="bodyleft">
+            Date of Birth: &nbsp; <input type="date" name="dob" id="">
+        </div>
+        <div id="bodyright" style="padding: 3px;">
+            Gender: &nbsp; Male<input type="radio" name="sex" id="gender"> &nbsp; &nbsp;
+                           Female <input type="radio" name="sex" id="gender"> &nbsp; &nbsp;
+                           Other <input type="radio" name="sex" id="gender">
+        </div>
+        <div id="bodyleft">
+            Contact No: &nbsp; <input type="number" name="phno" id="">
+        </div>
+        <div id="bodyright">
+            Active Backlogs: &nbsp; <input type="number" name="backlog" id="">
+        </div>
+        <div id="bodyleft">
+            SGPA: &nbsp; <input type="number" name="sgpa" id="">
+        </div>
+
+        <!-- <div id="detailTab">
+            <details style="color: red;">
+                SGPA should be Sum of all CGPA / No of Semesters <br>
+                Note that SGPA below 7.5 will not be considered for furthur processes.
+            </details>
+        </div> -->
+        
+        <div id="bodyright" style="padding: 1px;">
+            Year of passing: &nbsp; <label for="passing"></label>
+            <select name="yop" id="passing">
+                <option value="">2016</option>
+                <option value="">2017</option>
+                <option value="">2018</option>
+                <option value="">2019</option>
+                <option value="">2020</option>
+                <option value="">2021</option>
+                <option value="">2022</option>
+                <option value="">2023</option>
+                <option value="">2024</option>
+            </select>
+        </div>
+        <div id="detailTab">
+            <details>
+                <ol>
+                    <li>SGPA is calculated as Sum of all CGPA / No. of semesters completed.</li>
+                    <li>SGPA lower than 7.5 will not be considered for furthur rounds.</li>
+                </ol>
+            </details>
+        </div>
+        <div id="bodyleft">
+            10th Year of Passing: &nbsp; <label for="10yop"></label>
+            <select name="10yop" id="10yop">
+                <option value="">2016</option>
+                <option value="">2017</option>
+                <option value="">2018</option>
+                <option value="">2019</option>
+                <option value="">2020</option>
+                <option value="">2021</option>
+                <option value="">2022</option>
+                <option value="">2023</option>
+                <option value="">2024</option>
+            </select>
+        </div>
+        <div id="bodyright">
+            10th Marks: &nbsp; <input type="number" name="10m" id="">
+        </div>
+        <div id="bodyleft">
+            12th Year of Passing: &nbsp; <label for="12yop"></label>
+            <select name="12yop" id="12yop">
+                <option value="">2016</option>
+                <option value="">2017</option>
+                <option value="">2018</option>
+                <option value="">2019</option>
+                <option value="">2020</option>
+                <option value="">2021</option>
+                <option value="">2022</option>
+                <option value="">2023</option>
+                <option value="">2024</option>
+            </select>
+        </div>
+        <div id="bodyright">
+            12th Marks: &nbsp; <input type="number" name="12m" id="">
+        </div>
+        <div id="bodyleft">
+            Attach Your CV: &nbsp; <input type="file" name="cv" id="cv">
+        </div>
+        <div id="bodyright">
+            Attach Your Photo: &nbsp; <input type="file" name="pic" id="pic">
+        </div>
+        <div id="footer">
+            <input type="checkbox" name="" id="condition">
+            I Agree to the Terms and Conditions applied !!!
+        </div>
+        <div id="footer">
+            <input type="submit" value="Submit Details"> &nbsp; &nbsp;
+            <input type="submit" value="Reset">
+
+        </div>
+    </div>
+</form>
+</body>
+</html>
